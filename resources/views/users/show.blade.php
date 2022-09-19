@@ -12,4 +12,10 @@
         <li>{{ $user->created_at }}</li>
     </ul>
 
+    <form action="{{ route('users.delete', $user->id) }}" method="POST">
+        @method('DELETE')
+        @csrf
+        <button>Deletar</button>
+    </form>
+
 @endsection
