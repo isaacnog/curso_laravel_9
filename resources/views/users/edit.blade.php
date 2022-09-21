@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <h1>Editar o usuário {{ $user->name }}</h1>
+    <h1 class="text-2x1 font-semibold leading-tigh py-2">Editar o usuário {{ $user->name }}</h1>
 
     @include('includes.validations-form')
 
